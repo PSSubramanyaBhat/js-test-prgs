@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+<script>
+
+function reverseWordsInSentence(){
+    document.writeln("PROGRAM 4....\n");
+    var sent = window.prompt("Enter your sentence: ").split(" ");
+    
+    for(var i =0; i<sent.length; i++)
+    {
+    	//var answer1 = reverseString(sent[i]);
+    	var answer2 = reverseString2(sent[i]);
+        //document.writeln(answer1);
+        //document.writeln();
+        document.writeln(answer2);
+    }
+}
+
+function reverseString(strg)
+{
+	var rev1 = strg.split("");
+    var revar = rev1.reverse();
+    var res = revar.join("");
+    
+    return res;
+}
+
+function reverseString2(strg2)
+{
+	var rev2 = strg2.split("");
+    
+    var revar2 = [];
+    
+    for(var i = 0; i<rev2.length; i++)
+    {
+    	revar2.push(rev2[rev2.length-(i+1)])
+    }
+    
+    
+    var res2 = revar2.join("");
+    
+    return res2;
+}
+
+reverseWordsInSentence();
+</script>
+</head>
+<body>
+</body>
+</html>

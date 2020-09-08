@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+<script>
+
+function splitStringTo2Words(){
+    document.writeln("PROGRAM 5....\n");
+    var wordList = ["news", "paper", "apple", "dessert", "ice", "cream"];
+    var wordList2 = [];
+    var ipString = window.prompt("Enter your string: ");
+    var flag = 1;
+    var count = 0;
+    
+    for( var i =0 ; i< wordList.length; i++)
+    {
+    	if(ipString.includes(wordList[i]))
+    	{
+        	count++;
+            wordList2.push(wordList[i]);
+    	}
+        
+    }
+    if(count<=1)
+    {
+ 		document.writeln("The given string "+ipString+" cant be formed from 2 words in the created list");
+ 	}
+    else
+    {
+    	document.writeln("The given string "+ipString+" can be formed from 2 words in the created list : "+wordList2);
+    }
+}
+
+
+
+splitStringTo2Words();
+</script>
+</head>
+<body>
+</body>
+</html>

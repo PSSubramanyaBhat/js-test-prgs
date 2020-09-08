@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+<script>
+
+function checkCommonListNumbers(){
+    document.writeln("PROGRAM 8....\n");
+    var numbers1 = [1,2,3,4, 55,6,25,12,45,56];
+    var numbers2 = [20,12,32,41,5,45,56,12,34,16,38];
+    if(numbers1.length > numbers2.length)
+    {
+    	var res = numbers1.length;
+    }
+    else
+    {
+    	var res = numbers2.length;
+    }
+    
+    document.writeln("The repeating numbers are: ");
+    for(var j =0; j<res; j++)
+    {
+    	if(numbers2.length > numbers1.length)
+        {
+        	if(numbers2.includes(numbers1[j]))
+        	{
+            	document.writeln(numbers1[j]);
+        	}
+        }
+        else
+        {
+        	if(numbers1.includes(numbers2[j]))
+        	{
+            	document.writeln(numbers2[j]);
+        	}
+        }
+    }
+    
+    
+    
+    
+}
+checkCommonListNumbers();
+</script>
+</head>
+<body>
+</body>
+</html>

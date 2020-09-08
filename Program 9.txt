@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+<script>
+
+function sort012(){
+    document.writeln("PROGRAM 9....\n");
+    var arraynum = [0,1,2,0,1,2,0,1,2];
+    var sortarraynum = [];
+    for(var i =0; i<3; i++)
+    {       
+        for(var j =0; j<arraynum.length; j++)
+    	{       
+        	if (arraynum[j] == i)
+            	{
+				sortarraynum.push(arraynum[j]);
+            	}
+   	}
+    }
+    document.writeln("the sorted array :"+sortarraynum);
+}
+
+
+
+sort012();
+</script>
+</head>
+<body>
+</body>
+</html>

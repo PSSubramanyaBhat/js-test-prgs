@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+<script>
+
+function checkAnagramStrings(){
+    document.writeln("PROGRAM 3....\n");
+    var numbers1 = "LISTEN";
+    var numbers2 = "SILENT";
+    
+    var arr1 = numbers1.split("");
+    var arr2 = numbers2.split("");
+
+    var flag = 0;
+    
+    if(numbers1.length == numbers2.length)
+    {
+    	for(var i=0;i<numbers1.length;i++)
+    	{
+    		if(arr2.includes(arr1[i]))
+            {
+            	var loc1 = arr1.indexOf(arr1[i]);
+                var loc2 = arr2.indexOf(arr1[i]);
+                
+                delete arr1[loc1];
+                delete arr2[loc2];
+                
+            }
+            else
+            {
+            	flag = 1;
+            }
+    	}
+        
+        if(flag == 0)
+        {
+        	document.writeln("The given 2 strings are Anagrams!");
+        }
+        else
+        {
+        	document.writeln("The given 2 strings are NOT Anagrams!");
+        }
+    }
+    else
+    {
+    	document.writeln("The given 2 strings are NOT Anagrams!");
+    }
+    
+}
+checkAnagramStrings();
+</script>
+</head>
+<body>
+</body>
+</html>

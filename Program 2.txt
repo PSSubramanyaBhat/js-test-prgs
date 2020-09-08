@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+<script>
+
+function checkPalindromeNumber(){
+    document.writeln("PROGRAM 2....\n");
+    var ipString = window.prompt("Enter a string: ")
+    var len = ipString.length;
+    var n = 0;
+    var m = len;
+    var flag = 0;
+    var res = parseInt(m/2);
+    for(var i = 0; i <res; i++)
+    {
+        if(ipString.substring(i, i+1) == ipString.substring(m-1, m))
+        {
+            m--;
+            n++;
+            
+        }
+        else
+        {
+            flag = 1;
+            document.writeln("The entered string is NOT a palindrome\n");
+            break;
+        }
+    }
+    if(flag == 0)
+    {
+        document.writeln("The entered string is a palindrome\n");
+    }
+    
+}
+checkPalindromeNumber();
+</script>
+</head>
+<body>
+</body>
+</html>

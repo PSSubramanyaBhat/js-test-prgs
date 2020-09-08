@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+<script>
+
+function checkOverlappingRectangles(){
+    document.write("PROGRAM 10....\n");
+    var R1coordinates = window.prompt("Enter the 1st diagoanl pts. x1, y1,\n and second diagonal points x2, y2 of rectangle 1: ").split(" ");
+    var R2coordinates = window.prompt("Enter the 1st diagoanl pts. x1, y1,\n and second diagonal points x2, y2 of rectangle 2: ").split(" ");
+    if ((R1coordinates[0] == R2coordinates[0]) && (R1coordinates[1] == R2coordinates[1]) && R1coordinates[2] == R2coordinates[2] && R1coordinates[3] == R2coordinates[3])
+    {
+        document.write("\nThe two rectangles are overlapping");
+    }
+    else
+    {
+        document.write("\nThe two rectangles are NOT overlapping");
+    }
+    
+    //If both the coordinates of cross diagonal both the given rectangles are same then the  rectangles are overlapping
+    
+    
+}
+checkOverlappingRectangles();
+</script>
+</head>
+<body>
+</body>
+</html>

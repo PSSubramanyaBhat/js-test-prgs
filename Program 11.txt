@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+<script>
+
+function checkSquareNumber(){
+    document.writeln("PROGRAM 1.....\n");
+    var number = window.prompt("Enter a number: ")
+    var x = Math.sqrt(number);
+    if(Number.isInteger(x))
+    {
+        document.writeln("\nThe entered number is a perfect square of "+x);
+    }
+    else
+    {
+        document.writeln("\nThe entered number is NOT a perfect square number");
+    }
+}
+checkSquareNumber();
+</script>
+</head>
+<body>
+</body>
+</html>
+

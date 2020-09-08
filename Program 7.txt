@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+<script>
+
+function checkDuplicateNumber(){
+    document.writeln("PROGRAM 7....\n");
+    var numbers = [];
+    var checking = [];
+    
+    for(var j =0; j<100; j++)
+    {
+        if (j < 35)
+        {
+            numbers[j] = j+1;
+        }
+        if(j==35)
+        {
+        	numbers[j] = 12;
+        }
+        if(j>35)
+        {
+            numbers[j] = j+1;
+        }
+        
+    }
+    
+    
+    for(var i = 0; i<numbers.length; i++)
+    {
+        if(checking.includes(numbers[i]))
+        {
+        	document.writeln("The repeating number is : "+numbers[i]);
+        	continue;
+        }
+        else
+        {
+        	checking.push(i);
+        }
+    }
+    
+    
+}
+checkDuplicateNumber();
+</script>
+</head>
+<body>
+</body>
+</html>
